@@ -12,6 +12,7 @@
   --surface-color-hover: rgba(255, 255, 255, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url("./assets/moon-stars.svg");
+  --photo: 112px;
 }
 
 .light {
@@ -52,7 +53,8 @@ body {
   /*img é inline e não aceita margin para centralizar*/
   border: 3px solid grey;
   border-radius: 70px;
-  width: 112px;
+  width: var(--photo);
+  height: var(--photo);
 }
 
 #profile p {
@@ -81,6 +83,7 @@ body {
   transform: translateY(-50%);
   z-index: 1;
   width: 32px;
+  animation: slideModeBack .3s forwards;
 }
 /*SURFACE/BUTTON DARK-MODE*/
 #switch span {
@@ -95,8 +98,11 @@ body {
 }
 
 .light #switch button {
-  left: initial;
-  right: 0;
+  animation: slideMode .3s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 /*LISTA DE LINKS*/
@@ -170,4 +176,24 @@ footer {
 footer a{
   color: var(--text-color);
   font-size: 12px;
+}
+
+
+/*ANIMATION*/
+@keyframes slideMode {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slideModeBack {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
