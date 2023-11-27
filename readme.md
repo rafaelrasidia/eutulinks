@@ -1,8 +1,8 @@
 #a1
-<h1 align="center"> NLW #10 Copa </h1>
+<h1 align="center"> EutuLinks </h1>
 
 <p align="center">
-Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
+Um dia esse projeto para gerar links e mini-sites será grandioso, moderno, vai estar presente em todos os perfis de todas as redes sociais desse planeta.
 </p>
 
 <p align="center">
