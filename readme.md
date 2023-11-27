@@ -18,7 +18,7 @@ Um dia esse projeto para gerar links e mini-sites será grandioso, moderno, vai 
 <br>
 
 <p align="center">
-  <img alt="calendario da copa" src=".assets/preview.png" width="100%">
+  <img alt="Preview EutuLinks" src=".github/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
